@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
 
 /* ====================== СБРОС VITE ПО УМОЛЧАНИЮ ====================== */
-html, body, #root {
+html,
+body,
+#root {
   margin: 0 !important;
   padding: 0 !important;
   width: 100% !important;
@@ -11,19 +13,15 @@ html, body, #root {
 
 /* ====================== ГЛОБАЛЬНЫЕ СТИЛИ ====================== */
 .empire-wrapper {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
-  
-  background-image: url('./pictures/a cap.jpg');   /* ← твоя картинка */
-  background-size:1600px;
-  background-position: center top;
-  background-attachment:scroll;
-  background-color: #f4eede;                           
-  
+  background-image: url('./pictures/background3.jpg');
+  background-repeat: repeat;
+
   color: #3c2a1f;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  overflow-x: hidden;
-  position: relative;
+  /* overflow-x: hidden;
+  position: relative; */
 }
 
 /* ====================== NAVBAR (теперь фон — та же картинка) ====================== */
@@ -31,10 +29,10 @@ html, body, #root {
 .navbar {
   display: flex;
   align-items: center;
+  background-image: url('./pictures/a\ cap.jpg');
   justify-content: space-between;
   padding: 20px 5%;
-  
-  background-image: url('./pictures/a cap.jpg');           /* обязательно — чтобы просвечивала фоновая картинка */
+
   position: sticky;
   top: 0;
   z-index: 100;
@@ -46,9 +44,11 @@ html, body, #root {
   align-items: center;
   background: rgba(60, 42, 31, 0.92);
   color: white;
-  padding: 10px 16px;           /* слева и справа отступы */
+  padding: 10px 16px;
+  /* слева и справа отступы */
   border-radius: 9999px;
-  gap: 10px;                    /* расстояние между элементами */
+  gap: 10px;
+  /* расстояние между элементами */
 }
 
 
@@ -65,9 +65,11 @@ html, body, #root {
   border: none;
   outline: none;
   color: white;
-  flex: 1;                      /* !!! это ключевое — занимает всё свободное место */
+  flex: 1;
+  /* !!! это ключевое — занимает всё свободное место */
   font-size: 14px;
-  min-width: 0;                 /* помогает не ломать flex */
+  min-width: 0;
+  /* помогает не ломать flex */
 }
 
 .search-input::placeholder {
@@ -88,7 +90,8 @@ html, body, #root {
   transition: all 0.3s ease;
   text-decoration: none;
   color: #3c2a1f;
-  background: rgba(255, 255, 255, 0.75);               /* лёгкая подложка для читаемости */
+  background: rgba(255, 255, 255, 0.75);
+  /* лёгкая подложка для читаемости */
   backdrop-filter: blur(4px);
 }
 
@@ -105,7 +108,7 @@ html, body, #root {
 .nav-capsule {
   display: flex;
   align-items: center;
-  background:  transparent;
+  background: transparent;
   border-radius: 9999px;
   border: 2px solid rgba(60, 42, 31, 0.92);
   padding: 0;
@@ -139,114 +142,150 @@ html, body, #root {
   width: 100%;
   padding: 0;
   margin: 0;
+
 }
 
-.historical-picture{
+.historical-picture {
   position: absolute;
   width: 400px;
   height: 700px;
-  left: 1%;                    /* или left: 0; если хочешь совсем к краю */
-  top: 60px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-50%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  left: 1%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 10px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-50%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 1;
 }
 
-.text-picture{
+.text-picture {
   position: absolute;
   width: 650px;
-  left: 28%;                    /* или left: 0; если хочешь совсем к краю */
-  top: -140px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  left: 28%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: -140px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
 
-.train-picture{
+.train-picture {
   position: absolute;
   width: 550px;
-  right: 0;                    /* или left: 0; если хочешь совсем к краю */
-  top: -120px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  right: 0;
+  /* или left: 0; если хочешь совсем к краю */
+  top: -120px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
 
-.assistant-window-picture{
+.assistant-window-picture {
   position: absolute;
   width: 480px;
-  right: 50px;                    /* или left: 0; если хочешь совсем к краю */
-  top: 220px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  right: 50px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 220px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
 
-.assistant-picture{
+.assistant-picture {
   position: absolute;
   width: 300px;
-  right: 370px;                    /* или left: 0; если хочешь совсем к краю */
-  top: 190px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  right: 370px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 190px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
 
-.watch-picture{
+.watch-picture {
   position: absolute;
   width: 60px;
-  right: 400px;                    /* или left: 0; если хочешь совсем к краю */
-  top: 385px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  right: 400px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 392px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
 
 
 
-.input-picture{
+.input-picture {
   position: absolute;
   width: 330px;
-  right: 100px;                    /* или left: 0; если хочешь совсем к краю */
-  top: 310px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  right: 100px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 310px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 1;
 }
 
-.message-input{
+.message-input {
   position: absolute;
   background: transparent;
   border: 0;
   width: 200px;
   right: 190px;
-  top: 315px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  top: 315px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 2;
   font-family: "El Messiri", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #5D4F41;
-   outline: none;
+  outline: none;
 
 }
 
 
 
-.send-button{
+.send-button {
   position: absolute;
   background-color: #CBB392;
   border: 1px solid #CBB392;
   border-radius: 51px;
   width: 280px;
   height: 40px;
-  right: 135px;                   /* или left: 0; если хочешь совсем к краю */
-  top: 375px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  right: 135px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 375px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 2;
   font-family: "El Messiri", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #5D4F41;
-   outline: none;
+  outline: none;
 
 }
 
@@ -256,53 +295,185 @@ html, body, #root {
 }
 
 .message-input::placeholder {
-    color: #5D4F41;
+  color: #5D4F41;
 
 }
 
 
 
 
-
+.about_project{
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+}
 
 .about-project-wrapper {
-  position: relative;
+  position: absolute;
   text-align: center;
-  z-index: 1;
+   top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-image: url('./pictures/background3.jpg');
+  /* Текстура */
+  background-size: cover;
+  /* или cover, если нужно покрыть всю область */
+  background-repeat: repeat;
+  /* если текстура должна повторяться */
+  z-index: 1;
   padding: 0;
   margin: 0;
   /* overflow-x: hidden; */
-   min-height: 500px;
+   max-height: none;
 }
 
-.wrapper-name-picture{
+.wrapper-name-picture {
   position: absolute;
   width: 400px;
-  left: 5px;                    /* или left: 0; если хочешь совсем к краю */
-  top: 0;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  left: 5px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 0;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 2;
-   max-width: 100%; 
+  max-width: 100%;
 }
 
-.wrapper-name-title{
-      position: absolute;
-      display: block;
+.wrapper-name-title {
+  position: absolute;
+  display: block;
   width: 300px;
-  left: 20px;                    /* или left: 0; если хочешь совсем к краю */
-  top: 5px;                    /* центрируем по вертикали относительно hero */
-  transform: translateY(-20%); /* точное выравнивание по центру по вертикали */              /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
+  left: 20px;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 5px;
+  /* центрируем по вертикали относительно hero */
+  transform: translateY(-20%);
+  /* точное выравнивание по центру по вертикали */
+  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 2;
-   max-width: 100%; 
-     font-family: "El Messiri", sans-serif;
+  max-width: 100%;
+  font-family: "El Messiri", sans-serif;
   font-weight: 700;
   font-size: 36px;
 
 }
 
+.design_element_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+
+}
+
+.design-element-picture {
+  mix-blend-mode: multiply;
+  position: absolute;
+   width: 41%;
+  transform: translate(0, 0);
+  left: 36%;
+  top: 1%;
+  z-index: 10;
+  max-width: 100%;
+  opacity: 80%;
+}
+
+.vector-first-picture {
+  position: absolute;
+  width: 30%;
+  left: 61%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 14%;
+  transform: translate(0, 0);
+  /* центрируем по вертикали относительно hero */
+  z-index: 10;
+  opacity: 80%;
+  object-fit: contain;
+}
+
+.vector-second-picture {
+  position: absolute;
+  width: 30%;
+  left:25%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 55%;
+  transform: translate(0, 0);
+  /* центрируем по вертикали относительно hero */
+  z-index: 10;
+  opacity: 80%;
+  object-fit: contain;
+}
+
+
+.subtract-picture {
+  position: absolute;
+  width: 30%;
+  right:-2%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 40%;
+  transform: translate(0, 0);
+  /* центрируем по вертикали относительно hero */
+  z-index: 10;
+  opacity: 50%;
+  object-fit: contain;
+}
+
+.first-title{
+  position: absolute;
+  width: 30%;
+  right:5%;
+  top: 6%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.first_text{
+  position: absolute;
+  width: 35%;
+  right:1%;
+  top: 13%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.second-title{
+  position: absolute;
+  width: 30%;
+  left:30%;
+  top: 47%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.second_text{
+  position: absolute;
+  width: 50%;
+  left:5%;
+  top: 55%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 166%;
+}
 
 
 
@@ -328,14 +499,16 @@ html, body, #root {
 .message-input-wrapper::before {
   content: "";
   position: absolute;
-  left: -2px;                 /* чуть выходит за границу, чтобы соединялось красиво */
+  left: -2px;
+  /* чуть выходит за границу, чтобы соединялось красиво */
   top: 50%;
   transform: translateY(-50%);
   width: 0;
   height: 0;
   border-top: 14px solid transparent;
   border-bottom: 14px solid transparent;
-  border-right: 16px solid #ffffff;   /* цвет фона поля */
+  border-right: 16px solid #ffffff;
+  /* цвет фона поля */
   z-index: 1;
 }
 
@@ -347,8 +520,10 @@ html, body, #root {
   top: 50%;
   transform: translateY(-50%);
   width: 3px;
-  height: 36px;               /* длина линии */
-  background: #3c5a9a;        /* синий цвет из твоего примера */
+  height: 36px;
+  /* длина линии */
+  background: #3c5a9a;
+  /* синий цвет из твоего примера */
   border-radius: 2px;
   z-index: 2;
 }
@@ -370,59 +545,50 @@ html, body, #root {
 /* ====================== HERO ====================== */
 .hero {
   position: relative;
-  height: 120vh;
+  background-image: url('./pictures/a cap.jpg');
+  background-repeat:repeat-x;
+  min-height: 105vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  overflow: hidden;
 }
 
-.tree-branch {
-  position: absolute;
-  left: 5%;
-  top: 64px;
-  width: 320px;
-  height: 380px;
-  transform: rotate(-12deg);
-  opacity: 0.9;
-  z-index: 1;
-}
 
-.branch-svg {
-  width: 100%;
-  height: 100%;
-}
+
 
 .quote-box {
   position: absolute;
   top: 20px;
   right: 0%;
   max-width: 640px;
-background: linear-gradient(
-    to right,
-        rgba(117, 104, 87, 0) 0%,
-    rgba(117, 104, 87, 0.25) 40%,
-    rgba(230, 217, 200, 1) 100%
-);
-  padding: 32px 32px 32px 64px;  
+  background: linear-gradient(to right,
+      rgba(117, 104, 87, 0) 0%,
+      rgba(117, 104, 87, 0.25) 40%,
+      rgba(230, 217, 200, 1) 100%);
+  padding: 32px 32px 32px 64px;
   border: 0;
   font-family: "El Messiri", sans-serif;
   font-size: 20px;
   line-height: 1.35;
   font-style: italic;
   z-index: 10;
-  display: flex;                    /* ← важно */
-  align-items: flex-start;          /* текст начинается сверху */
+  display: flex;
+  /* ← важно */
+  align-items: flex-start;
+  /* текст начинается сверху */
   gap: 16px;
 }
 
-.quote-icon{
-    width: 58px;
-    height: auto;
-    flex-shrink: 0;                   /* не сжимается */
-    margin-top: 4px;                  /* чуть ниже, чтобы выровнять по первой строке */
-    opacity: 0.9;
+.quote-icon {
+  width: 58px;
+  height: auto;
+  flex-shrink: 0;
+  /* не сжимается */
+  margin-top: 4px;
+  /* чуть ниже, чтобы выровнять по первой строке */
+  opacity: 0.9;
 }
 
 
@@ -434,7 +600,8 @@ background: linear-gradient(
   letter-spacing: -2px;
   margin-bottom: 8px;
   color: #3c2a1f;
-  text-shadow: 2px 2px 6px rgba(255,255,255,0.7);      /* для лучшей читаемости */
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+  /* для лучшей читаемости */
 }
 
 .subtitle {
@@ -514,8 +681,15 @@ background: linear-gradient(
 }
 
 @keyframes smokeAnim {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 /* ====================== LOWER SECTION ====================== */
@@ -685,20 +859,18 @@ background: linear-gradient(
   right: 0;
   height: 128px;
   background: white;
-  clip-path: polygon(
-    0 30%,
-    8% 15%,
-    18% 35%,
-    27% 10%,
-    39% 28%,
-    50% 5%,
-    63% 25%,
-    74% 8%,
-    85% 32%,
-    100% 18%,
-    100% 100%,
-    0 100%
-  );
+  clip-path: polygon(0 30%,
+      8% 15%,
+      18% 35%,
+      27% 10%,
+      39% 28%,
+      50% 5%,
+      63% 25%,
+      74% 8%,
+      85% 32%,
+      100% 18%,
+      100% 100%,
+      0 100%);
 }
 
 .dome-icon {
