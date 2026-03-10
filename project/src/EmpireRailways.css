@@ -305,7 +305,7 @@ body,
 .about_project{
   position: relative;
   width: 100%;
-  min-height: 1000px;
+  height: 1000px;
 }
 
 .about-project-wrapper {
@@ -475,17 +475,75 @@ body,
   line-height: 166%;
 }
 
+.impery_way{
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
 
 
 
+.impery_way_title{
+  position: absolute;
+  width: 15%;
+  left: 60%;
+  /* top: -200px; */
+  z-index: 15;
+ font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.impery_way_picture{
+  position: absolute;
+  width: 150%;
+  max-height: 80%;
+  right:-10%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: -10%;
+  transform: translate(0, 0);
+  /* центрируем по вертикали относительно hero */
+  z-index: 5;
+  opacity: 50%;
+  object-fit:fill;
+}
 
 
+.impery_way_card_wrapper{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+}
 
+.card{
+  width: 30%;
+  height: 40%;
+  border: 3px solid #5D4F41;
+  border-radius: 46px;
+  z-index: 11;
+  background-image: url('./pictures/background3.jpg');
+}
 
+.card_year{
+  position: absolute;
+  z-index: 10;
+ font-family: "El Messiri", sans-serif;
+  font-size: 35px;
+  color: #5D4F41;
+  font-weight: bold;
+  margin: 0;
+}
 
+.first_year{
 
-
-
+}
 
 
 
