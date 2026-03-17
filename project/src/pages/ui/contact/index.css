@@ -1,11 +1,11 @@
 .contact{
   position: relative;
   width: 100%;
-  max-height: 400px;
+  min-height:400px;
   margin-top: -300px;
 }
 
-.book__image{
+.book__picture{
   position: absolute;
   width: 15%;
   left:5%;
@@ -38,99 +38,84 @@
 }
 
 
-
-
-
-
-
-.impery_way_title{
+.contact__title{
   position: absolute;
+  text-align: center;
+  line-height: 1;
+  color: #372B0C;
   width: 30%;
-  left: 60%;
-  /* top: -200px; */
+  left: 25%;
+  top: 200px;
   z-index: 15;
- font-family: "El Messiri", sans-serif;
   font-size: 30px;
   font-weight: bold;
 }
 
-
-.card_spec{
-  z-index: 10;
-}
-
-.impery_way_card_wrapper{
+.key__picture{
   position: absolute;
-  top:50px;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 400px;
-  width: 95%;
-  margin-left: 2.5%;
-
-}
-
-.card{
-  position: relative;
-  width: 30%;
-  min-height: 320px;
-  border: 5px solid var(--third);
-  color: var(--third);
-  border-radius: 46px;
+  width: 2.5%;
+  left:49%;
+  top: 55%;
   z-index: 11;
 }
 
-.card_year{
+.mail__picture{
   position: absolute;
-  z-index: 10;
- font-family: "El Messiri", sans-serif;
-  font-size: 35px;
-  font-weight: bold;
-  color: #6A2E18;
-  margin: 0;
+  width: 40%;
+  left:58%;
+  bottom: 0;
+  z-index: 11;
 }
 
-.card_title{
+.print__picture{
   position: absolute;
+  width: 8%;
+  left:90%;
+  top:15%;
+  z-index: 11;
+}
+
+.mail__form{
+  position: absolute;
+  width: 1000px;
+  left:62%;
+  top:40%;
+  z-index: 11;
+
+}
+
+.mail__input{
+  display: block;
+  border: 0;
+  width: 450px;
+  outline: 0;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.mail__input::placeholder{
+  border: 0;
+  display: block;
+  width: 400px;
+  text-decoration: underline;
+}
+
+.mail__button{
+  position: absolute;
+  background-color: #372B0C;
+  border: 1px solid #372B0C;
+  border-radius: 51px;
+  width: 170px;
+  height: 40px;
+  top: 150px; 
+  left: 250px;
+  z-index: 20;
+  font-weight: 700;
   font-size: 22px;
-  font-weight: bold;
-  line-height: 1;
-  left: 20px;
-  top: 20px;
-}
-
-.card_text{
-  position: absolute;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
-  left: 20px;
-  bottom: 20px;
-}
-
-.first_year{
-  top: -50px;
-  left: 150px;
-}
-.second_year{
-  top: 320px;
-  left: 30px;
-}
-
-.third_year{
-  top: -50px;
-  right: 35px;
-}
-.fourth_year{
-  top: 320px;
-  left: 40px;
+  color: var(--secondary);
+  outline: none;
 }
 
 .spec__color{
-  color: #6A2E18;
+  color: #D88F74;
 }

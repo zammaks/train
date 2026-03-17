@@ -38,7 +38,7 @@ export const Contact = () => {
       style={{ backgroundImage: `url(${second_background})` }}
     >
       <div className="book__wrapper">
-        <img src={books} alt="" className="book__image" />
+        <img src={books} alt="" className="book__picture" />
         <div className="book__text__board">
           <p className="book__">The story begins with you</p>
         </div>
@@ -49,36 +49,43 @@ export const Contact = () => {
         ХОТИТЕ УЗНАТЬ БОЛЬШЕ? НАПИШИТЕ НАМ!
       </div>
 
-      <img src={key} alt="" />
-      <img src={mail_wrapper} alt="" />
-      <img src={print} alt="" />
+      <img src={key} alt="" className="key__picture"/>
+      <img src={mail_wrapper} alt="" className="mail__picture" />
+      <img src={print} alt="" className="print__picture" />
 
 
       <form onSubmit={handleSubmit} className="mail__form">
         <div>
-          <label>Ваше имя</label>
+          {/* <label>Ваше имя</label> */}
           <input
             type="text"
             name="name"
+            placeholder="Ваше имя"
+            className="mail__input"
             value={formData.name}
             onChange={handleChange}
           />
         </div>
 
         <div>
-          <label>Телефон или e-mail</label>
+          {/* <label>Телефон или e-mail</label> */}
           <input
             type="text"
             name="contact"
+            placeholder="Телефон или e-mail"
+            className="mail__input"
             value={formData.contact}
             onChange={handleChange}
           />
         </div>
 
         <div>
-          <label>Сообщение</label>
-          <textarea
+          {/* <label>Сообщение</label> */}
+          <input
+            type="text"
             name="message"
+            placeholder="Сообщение"
+            className="mail__input"
             value={formData.message}
             onChange={handleChange}
           />
@@ -89,14 +96,15 @@ export const Contact = () => {
             <input
               type="checkbox"
               name="consent"
+              // className="mail__input"
               checked={formData.consent}
               onChange={handleChange}
             />
-            Даю согласие на обработку персональных данных
+            Даю согласие на обработку <span className="spec__color">персональных данных</span>
           </label>
         </div>
 
-        <button type="submit">Отправить</button>
+        <button type="submit" className="mail__button">Отправить</button>
       </form>
     </section>
   );
