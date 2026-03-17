@@ -1,0 +1,22 @@
+.empire__wrapper {
+  /* min-height: 150vh; */
+  width: 100%;
+  background-repeat: repeat;
+  overflow-x: hidden;
+  position: relative; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main__wrapper{
+    position: relative;
+    overflow: hidden;
+}

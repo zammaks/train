@@ -1,0 +1,23 @@
+.button {
+  display: inline;
+  font-family: var(--primary-font);
+  text-align: center;
+  font-weight: 700;
+  background-color: #3c2a1f;
+  color: var(--secondary);
+  width: 250px;
+  height: 60px;
+}
+
+.button:hover {
+  background: #5c4633;
+  transform: translateY(-2px);
+}
+
+.title-large {
+  font-size: 70px;
+}
+
+.title-medium {
+  font-size: 32px;
+}

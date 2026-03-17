@@ -1,0 +1,16 @@
+.title {
+  display: inline;
+  color: var(--primary);
+  font-family: var(--primary-font);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 150px;
+}
+
+.title-large {
+  font-size: 70px;
+}
+
+.title-medium {
+  font-size: 32px;
+}

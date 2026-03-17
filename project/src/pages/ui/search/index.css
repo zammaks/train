@@ -1,0 +1,27 @@
+.search-bar {
+  display: flex;
+  max-width: 15%;
+  align-items: center;
+  background: var(--primary);
+  padding: 10px 16px;
+  border-radius: 9999px;
+}
+
+
+.search-icon-right {
+  width: 16px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--secondary);
+  flex: 1;
+  font-size: 14px;
+}

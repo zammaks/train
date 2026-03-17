@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
 
 /* ====================== СБРОС VITE ПО УМОЛЧАНИЮ ====================== */
 html,
@@ -11,7 +10,6 @@ body,
   height: 100% !important;
 }
 
-/* ====================== ГЛОБАЛЬНЫЕ СТИЛИ ====================== */
 .empire-wrapper {
   /* min-height: 100vh; */
   width: 100%;
@@ -24,8 +22,7 @@ body,
   position: relative; */
 }
 
-/* ====================== NAVBAR (теперь фон — та же картинка) ====================== */
-/* ====================== NAVBAR ====================== */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -66,10 +63,8 @@ body,
   outline: none;
   color: white;
   flex: 1;
-  /* !!! это ключевое — занимает всё свободное место */
   font-size: 14px;
   min-width: 0;
-  /* помогает не ломать flex */
 }
 
 .search-input::placeholder {
@@ -91,8 +86,6 @@ body,
   text-decoration: none;
   color: #3c2a1f;
   background: rgba(255, 255, 255, 0.75);
-  /* лёгкая подложка для читаемости */
-  backdrop-filter: blur(4px);
 }
 
 .nav-link:hover {
@@ -274,12 +267,8 @@ body,
   width: 280px;
   height: 40px;
   right: 135px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 375px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 2;
   font-family: "El Messiri", sans-serif;
   font-weight: 700;
@@ -318,9 +307,7 @@ body,
   background-image: url('./pictures/background3.jpg');
   /* Текстура */
   background-size: cover;
-  /* или cover, если нужно покрыть всю область */
   background-repeat: repeat;
-  /* если текстура должна повторяться */
   z-index: 1;
   padding: 0;
   margin: 0;
@@ -332,12 +319,8 @@ body,
   position: absolute;
   width: 400px;
   left: 5px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 0;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 2;
   max-width: 100%;
@@ -348,12 +331,8 @@ body,
   display: block;
   width: 300px;
   left: 20px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 5px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 2;
   max-width: 100%;
@@ -389,10 +368,8 @@ body,
   position: absolute;
   width: 30%;
   left: 61%;
-  /* или left: 0; если хочешь совсем к краю */
   top: 14%;
   transform: translate(0, 0);
-  /* центрируем по вертикали относительно hero */
   z-index: 10;
   opacity: 80%;
   object-fit: contain;
@@ -553,46 +530,7 @@ body,
 
 
 
-/* Хвостик слева */
-.message-input-wrapper::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  /* чуть выходит за границу, чтобы соединялось красиво */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 14px solid transparent;
-  border-bottom: 14px solid transparent;
-  border-right: 16px solid #ffffff;
-  /* цвет фона поля */
-  z-index: 1;
-}
 
-/* Синяя вертикальная линия внутри хвостика */
-.message-input-wrapper::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3px;
-  height: 36px;
-  /* длина линии */
-  background: #3c5a9a;
-  /* синий цвет из твоего примера */
-  border-radius: 2px;
-  z-index: 2;
-}
-
-/* Плейсхолдер */
-.message-input::placeholder {
-  color: rgba(60, 42, 31, 0.55);
-  font-style: italic;
-}
-
-/* При фокусе — лёгкое улучшение */
 
 
 

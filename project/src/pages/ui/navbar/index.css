@@ -1,0 +1,28 @@
+.nav-capsule {
+  display: flex;
+  /* max-width: 45%; */
+  align-items: center;
+  background: transparent;
+  border-radius: 9999px;
+  border: 2px solid var(--primary);
+  padding: 0;
+  gap: 1px;
+  box-shadow: 0 3px 10px rgba(60, 42, 31, 0.1);
+}
+
+.nav-item {
+  padding: 8px 20px;
+  font-size: 24px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}

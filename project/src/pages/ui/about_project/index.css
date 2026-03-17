@@ -1,0 +1,164 @@
+.about_project{
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+}
+
+.about-project-wrapper {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('./pictures/background3.jpg'); */
+  /* Текстура */
+  background-size: cover;
+  background-repeat: repeat;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+   max-height: none;
+   margin-top: -150px;
+}
+
+
+
+.wrapper-name-picture {
+  position: absolute;
+  width: 400px;
+  left: 5px;
+  top: 0;
+  transform: translateY(-20%);
+  object-fit: contain;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.wrapper-name-title {
+  position: absolute;
+  display: block;
+  width: 300px;
+  left: 20px;
+  top: 35px;
+  transform: translateY(-20%);
+  object-fit: contain;
+  z-index: 2;
+  max-width: 100%;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+
+}
+
+.design_element_wrapper {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+
+}
+
+.design-element-picture {
+  mix-blend-mode: multiply;
+  position: absolute;
+   width: 41%;
+  transform: translate(0, 0);
+  background-repeat: repeat;
+  left: 36%;
+  top: 1%;
+  z-index: 10;
+  max-width: 100%;
+  opacity: 80%;
+}
+
+.vector-first-picture {
+  position: absolute;
+  width: 30%;
+  left: 61%;
+  top: 12%;
+  transform: translate(0, 0);
+  z-index: 10;
+  opacity: 80%;
+  object-fit: contain;
+}
+
+.vector-second-picture {
+  position: absolute;
+  width: 30%;
+  left:25%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 52%;
+  transform: translate(0, 0);
+  /* центрируем по вертикали относительно hero */
+  z-index: 10;
+  opacity: 80%;
+  object-fit: contain;
+}
+
+
+.subtract-picture {
+  position: absolute;
+  width: 30%;
+  right:-2%;
+  /* или left: 0; если хочешь совсем к краю */
+  top: 40%;
+  transform: translate(0, 0);
+  /* центрируем по вертикали относительно hero */
+  z-index: 10;
+  opacity: 50%;
+  object-fit: contain;
+}
+
+.first-title{
+  position: absolute;
+  width: 30%;
+  right:5%;
+  top: 6%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.first_text{
+  position: absolute;
+  width: 35%;
+  right:1%;
+  top: 13%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.second-title{
+  position: absolute;
+  width: 30%;
+  left:30%;
+  top: 47%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.second_text{
+  position: absolute;
+  width: 50%;
+  left:5%;
+  top: 55%;
+  z-index: 10;
+  object-fit: contain;
+ font-family: "El Messiri", sans-serif;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 166%;
+}
