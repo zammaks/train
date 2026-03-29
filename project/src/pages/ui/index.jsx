@@ -1,13 +1,14 @@
 import { Search } from "./search";
 import { Navbar } from "./navbar";
 import { Hero } from "./hero";
-import { About_project } from "./about_project";
+import { AboutProject } from "./about_project";
 
 import { first_background } from "../../app/images";
 
 import "./index.css";
-import { Impery_way } from "./impery_way";
+import { ImperyWay } from "./impery_way";
 import { Contact } from "./contact";
+import { Footer } from "./footer";
 
 export const HomePage = () => {
 
@@ -20,9 +21,10 @@ export const HomePage = () => {
         </nav>
       </div>
       <Hero />
-      <About_project />
-      <Impery_way />
+      <AboutProject />
+      <ImperyWay />
       <Contact />
+      <Footer />
 
     </div>
   );

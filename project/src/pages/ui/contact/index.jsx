@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 import {
   second_background,
@@ -10,30 +12,40 @@ import {
 
 import "./index.css";
 
+const validationSchema = Yup.object({
+  name: Yup.string()
+    .min(2, "Минимум 2 символа")
+    .required("Введите имя"),
+
+  contact: Yup.string()
+    .required("Введите телефон или email")
+    .test(
+      "is-valid-contact",
+      "Введите корректный email или телефон",
+      (value) => {
+        if (!value) return false;
+
+        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+        const phoneRegex = /^[0-9]{7,}$/;
+
+        return emailRegex.test(value) || phoneRegex.test(value);
+      }
+    ),
+
+
+  message: Yup.string()
+    .min(5, "Минимум 5 символов")
+    .required("Введите сообщение"),
+
+  consent: Yup.boolean()
+    .oneOf([true], "Необходимо согласие"),
+});
+
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    contact: "",
-    message: "",
-    consent: false,
-  });
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
-
   return (
     <section
+      id="contact"
       className="contact"
       style={{ backgroundImage: `url(${second_background})` }}
     >
@@ -49,63 +61,77 @@ export const Contact = () => {
         ХОТИТЕ УЗНАТЬ БОЛЬШЕ? НАПИШИТЕ НАМ!
       </div>
 
-      <img src={key} alt="" className="key__picture"/>
+      <img src={key} alt="" className="key__picture" />
       <img src={mail_wrapper} alt="" className="mail__picture" />
       <img src={print} alt="" className="print__picture" />
 
+      <Formik
+        initialValues={{
+          name: "",
+          contact: "",
+          message: "",
+          consent: false,
+        }}
+        validationSchema={validationSchema}
+        onSubmit={(values) => {
+          console.log(values);
+        }}
+      >
+        {() => (
+          <Form className="mail__form">
+            <div className="mail__input__wrapper">
+              <Field
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                className="mail__input"
+              />
+              <ErrorMessage name="name" component="div" className="error" />
+            </div>
 
-      <form onSubmit={handleSubmit} className="mail__form">
-        <div>
-          {/* <label>Ваше имя</label> */}
-          <input
-            type="text"
-            name="name"
-            placeholder="Ваше имя"
-            className="mail__input"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
+            <div className="mail__input__wrapper">
+              <Field
+                type="text"
+                name="contact"
+                placeholder="Телефон или e-mail"
+                className="mail__input"
+              />
+              <ErrorMessage name="contact" component="div" className="error" />
+            </div>
 
-        <div>
-          {/* <label>Телефон или e-mail</label> */}
-          <input
-            type="text"
-            name="contact"
-            placeholder="Телефон или e-mail"
-            className="mail__input"
-            value={formData.contact}
-            onChange={handleChange}
-          />
-        </div>
+            <div className="mail__input__wrapper">
+              <Field
+                type="text"
+                name="message"
+                placeholder="Сообщение"
+                className="mail__input"
+              />
+              <ErrorMessage name="message" component="div" className="error" />
+            </div>
 
-        <div>
-          {/* <label>Сообщение</label> */}
-          <input
-            type="text"
-            name="message"
-            placeholder="Сообщение"
-            className="mail__input"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </div>
+            <div>
+              <label className="custom__checkbox">
+                <Field
+                  type="checkbox"
+                  name="consent"
+                  className="checkbox__input"
+                />
+                <span>
+                  Даю согласие на обработку{" "}
+                  <span className="spec__color">
+                    персональных данных
+                  </span>
+                </span>
+              </label>
+              <ErrorMessage name="consent" component="div" className="error" />
+            </div>
 
-        <div>
-          <label>
-            <input
-              type="checkbox"
-              name="consent"
-              // className="mail__input"
-              checked={formData.consent}
-              onChange={handleChange}
-            />
-            Даю согласие на обработку <span className="spec__color">персональных данных</span>
-          </label>
-        </div>
-
-        <button type="submit" className="mail__button">Отправить</button>
-      </form>
+            <button type="submit" className="mail__button">
+              Отправить
+            </button>
+          </Form>
+        )}
+      </Formik>
     </section>
   );
 };

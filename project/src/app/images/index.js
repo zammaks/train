@@ -26,3 +26,9 @@ export { default as mail_wrapper } from "./contact/mail_wrapper.png"
 export { default as key } from "./contact/key.png"
 export { default as print } from "./contact/print.png"
 export { default as books } from "./contact/books.svg"
+
+export { default as contacts } from "./footer/contacts.svg"
+export { default as mail } from "./footer/mail.svg"
+export { default as telegram } from "./footer/telegram.svg"
+export { default as vk } from "./footer/vk.svg"
+

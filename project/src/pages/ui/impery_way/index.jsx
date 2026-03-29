@@ -6,10 +6,10 @@ import {
 
 import "./index.css";
 
-export const Impery_way = () => {
+export const ImperyWay = () => {
 
   return (
-    <section className='impery_way' style={{ backgroundImage: `url(${second_background})` }}>
+    <section id="impery_way" className='impery_way' style={{ backgroundImage: `url(${second_background})` }}>
       <p className="impery_way_title">ПУТЬ ИМПЕРИИ</p>
       <img src={rails} alt="" className='impery_way_picture' />
       <ul className="impery_way_card_wrapper">

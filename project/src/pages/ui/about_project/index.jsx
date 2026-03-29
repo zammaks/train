@@ -11,12 +11,12 @@ import {
 
 import "./index.css";
 
-export const About_project = () => {
+export const AboutProject = () => {
 
   return (
-    <section className='about_project' style={{ backgroundImage: `url(${second_background})` }}>
+    <section  className='about_project' style={{ backgroundImage: `url(${second_background})` }}>
       <div className="about-project-wrapper" style={{ backgroundImage: `url(${second_background})` }}>
-        <img src={wrapp} alt="" className='wrapper-name-picture' />
+        <img  id="about_project" src={wrapp} alt="" className='wrapper-name-picture' />
         <p className='wrapper-name-title'>О ПРОЕКТЕ</p>
       </div>
       <div className="design_element_wrapper">

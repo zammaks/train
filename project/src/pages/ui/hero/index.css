@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+  /* opacity: 59%; */
 }
 
 .quote-box {
@@ -214,9 +215,9 @@
 }
 
 .btn {
-  /* padding: 18px 48px; */
-  font-size: 20px;
-  font-weight: 400;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
   border-radius: 9999px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -224,11 +225,14 @@
   position: relative;
   z-index: 2;
   margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
 }
 
 .btn.primary {
   background: #3c2a1f;
-  color: white;
+  color: var(--secondary);
   width: 248px;
   height: 60px;
   text-align: center;
@@ -248,5 +252,5 @@
 
 .btn.secondary:hover {
   background: #3c2a1f;
-  color: white;
+  color: var(--secondary);
 }

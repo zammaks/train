@@ -17,7 +17,7 @@ import "./index.css";
 export const Hero = () => {
 
     return (
-      <section className="hero" style={{ backgroundImage: `url(${first_background})` }}>
+      <section id="hero" className="hero" style={{ backgroundImage: `url(${first_background})` }}>
         <div className="quote-box">
           <img
             src={quote}
@@ -35,8 +35,8 @@ export const Hero = () => {
           <img src={clock} alt="" className="watch-picture" />
           <img src={message_input} alt="" className="input-picture" />
           <div className="hero-buttons">
-            <button className="btn primary">Начать путешествие</button>
-            <button className="btn secondary">О проекте</button>
+            <a href="#impery_way" className="btn primary" >Начать путешествие</a>
+            <a href="#about_project" className="btn secondary">О проекте</a>
           </div>
           <form className="message-form">
             <input
