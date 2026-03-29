@@ -2,6 +2,8 @@ export { default as loupe } from "./search/loupe.svg"
 
 export { default as first_background } from "./background/first_background.jpg"
 export { default as second_background } from "./background/second_background.jpg"
+export { default as full_background } from "./background/full_background.jpg"
+
 
 
 export { default as quote } from "./hero/quote.svg"
