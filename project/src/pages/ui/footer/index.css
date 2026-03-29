@@ -1,26 +1,26 @@
-.footer{
+.footer {
   width: 100%;
-  min-height:100px;
+  min-height: 100px;
   background-color: #1C1712;
 }
 
-.social__list{
+.social__list {
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7%;
 }
-.social__elem{
+
+.social__elem {
   width: 4%;
 }
-.social__link{
+
+.social__link {
   padding: 5px;
 }
 
 
-.social__icon{
+.social__icon {
   max-width: 35px;
 }
-
-

@@ -18,6 +18,7 @@ export { default as wrapp } from "./about_project/wrapp.png"
 export { default as left_underline } from "./about_project/left_underline.png"
 export { default as right_underline } from "./about_project/right_underline.png"
 export { default as design_elements } from "./about_project/design_elements.png"
+export { default as design_train } from "./about_project/design_train.png"
 
 export { default as rails } from "./impery_way/rails.png"
 export { default as card } from "./impery_way/card.png"

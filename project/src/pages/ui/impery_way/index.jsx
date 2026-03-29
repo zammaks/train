@@ -12,6 +12,7 @@ export const ImperyWay = () => {
     <section id="impery_way" className='impery_way' style={{ backgroundImage: `url(${second_background})` }}>
       <p className="impery_way_title">ПУТЬ ИМПЕРИИ</p>
       <img src={rails} alt="" className='impery_way_picture' />
+      <img src={card} alt="" className='card_picture' />
       <ul className="impery_way_card_wrapper">
         <li className='card' style={{ backgroundImage: `url(${second_background})` }}>
           <div className='card_year first_year'>1837 г.</div>
@@ -19,8 +20,11 @@ export const ImperyWay = () => {
           <p className='card_text'>Запущена линия
             <span className="spec__color"> Санкт-Петербург - Царское Село,</span>  ставшая первой общественной железной дорогой в империи и показавшей перспективность нового вида транспорта</p>
         </li>
-        <li className='card_spec'>
-          <img src={card} alt="" />
+        <li className='card card_spec'>
+          <div className='card_year spec_year'>1851 г.</div>
+          <h3 className='card_title'>Ввод в эксплуатацию Николаевской железной дороги</h3>
+          <p className='card_text'>Дорога
+            <span className="spec__color"> Санкт-Петербург - Москва, </span> соедившая две столицы и ставшей важнейшей магистралью страны для экоономики, управления и военных перевозок</p>
         </li>
         <li className='card' style={{ backgroundImage: `url(${second_background})` }}>
           <div className='card_year second_year'>1860-1870 г.</div>

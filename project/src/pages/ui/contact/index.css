@@ -1,19 +1,19 @@
-.contact{
+.contact {
   position: relative;
   width: 100%;
-  min-height:400px;
+  min-height: 400px;
   margin-top: -300px;
 }
 
-.book__picture{
+.book__picture {
   position: absolute;
   width: 15%;
-  left:5%;
+  left: 5%;
   bottom: 0%;
   z-index: 11;
 }
 
-.book__year{
+.book__year {
   position: absolute;
   z-index: 15;
   font-size: 20px;
@@ -23,7 +23,7 @@
   color: var(--secondary);
 }
 
-.book__text__board{
+.book__text__board {
   position: absolute;
   z-index: 15;
   font-size: 8px;
@@ -33,12 +33,12 @@
   width: 30px;
   line-height: 1;
   padding: 5px;
-  border: 1px solid var(--secondary) ;
+  border: 1px solid var(--secondary);
   color: var(--secondary);
 }
 
 
-.contact__title{
+.contact__title {
   position: absolute;
   text-align: center;
   line-height: 1;
@@ -51,40 +51,40 @@
   font-weight: bold;
 }
 
-.key__picture{
+.key__picture {
   position: absolute;
   width: 2.5%;
-  left:49%;
+  left: 49%;
   top: 55%;
   z-index: 11;
 }
 
-.mail__picture{
+.mail__picture {
   position: absolute;
   width: 40%;
-  left:58%;
+  left: 58%;
   bottom: 0;
   z-index: 11;
 }
 
-.print__picture{
+.print__picture {
   position: absolute;
   width: 8%;
-  left:90%;
-  top:15%;
+  left: 90%;
+  top: 15%;
   z-index: 11;
 }
 
-.mail__form{
+.mail__form {
   position: absolute;
   width: 1000px;
-  left:62%;
-  top:40%;
+  left: 62%;
+  top: 40%;
   z-index: 11;
 
 }
 
-.mail__input{
+.mail__input {
   display: block;
   border: 0;
   width: 450px;
@@ -96,7 +96,7 @@
   font-weight: bold;
 }
 
-.mail__input::placeholder{
+.mail__input::placeholder {
   border: 0;
   display: block;
   width: 400px;
@@ -104,14 +104,14 @@
   font-weight: bold;
 }
 
-.mail__button{
+.mail__button {
   position: absolute;
   background-color: #372B0C;
   border: 1px solid #372B0C;
   border-radius: 51px;
   width: 170px;
   height: 40px;
-  top: 150px; 
+  top: 150px;
   left: 250px;
   z-index: 20;
   font-weight: 700;
@@ -120,56 +120,56 @@
   outline: none;
 }
 
-.spec__color{
+.spec__color {
   color: #D88F74;
 }
 
-.mail__input__wrapper{
+.mail__input__wrapper {
   border-bottom: 2px solid var(--third);
   max-width: 45%;
 }
 
 .custom__checkbox {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .custom__checkbox input {
-    -webkit-appearance: none; 
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px; 
-    background: rgb(242, 233, 213);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: rgb(242, 233, 213);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .custom__checkbox input:hover {
-    border-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .custom__checkbox input:checked {
-    background-color: rgba(195, 186, 167, 1);
-    border-color: rgba(195, 186, 167, 1);
+  background-color: rgba(195, 186, 167, 1);
+  border-color: rgba(195, 186, 167, 1);
 }
 
 
 .custom__checkbox input:checked::before {
-    content: "✓";
-    font-size: 14px;
-    font-weight: bold;
+  content: "✓";
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.error{
+.error {
   position: absolute;
   font-size: 12px;
   color: red;

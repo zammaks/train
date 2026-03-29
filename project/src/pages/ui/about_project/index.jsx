@@ -4,7 +4,8 @@ import {
   left_underline,
   right_underline,
   design_elements,
-  second_background
+  second_background,
+  design_train
 } from "../../../app/images";
 
 
@@ -14,13 +15,14 @@ import "./index.css";
 export const AboutProject = () => {
 
   return (
-    <section  className='about_project' style={{ backgroundImage: `url(${second_background})` }}>
+    <section className='about_project' style={{ backgroundImage: `url(${second_background})` }}>
       <div className="about-project-wrapper" style={{ backgroundImage: `url(${second_background})` }}>
-        <img  id="about_project" src={wrapp} alt="" className='wrapper-name-picture' />
+        <img id="about_project" src={wrapp} alt="" className='wrapper-name-picture' />
         <p className='wrapper-name-title'>О ПРОЕКТЕ</p>
       </div>
       <div className="design_element_wrapper">
         <img src={design_elements} alt="" className='design-element-picture' />
+        <img src={design_train} alt="" className='design-train-picture' />
         <img src={right_underline} alt="" className='vector-first-picture' />
         <img src={left_underline} alt="" className='vector-second-picture' />
         <img src={map} alt="" className='subtract-picture' />

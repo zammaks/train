@@ -1,6 +1,6 @@
 .search-bar {
   display: flex;
-  max-width: 15%;
+  max-width: 30%;
   align-items: center;
   background: var(--primary);
   padding: 10px 16px;

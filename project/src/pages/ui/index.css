@@ -1,9 +1,8 @@
 .empire__wrapper {
-  /* min-height: 150vh; */
   width: 100%;
   background-repeat: repeat;
   overflow-x: hidden;
-  position: relative; 
+  position: relative;
 }
 
 .navbar {
@@ -16,7 +15,18 @@
   z-index: 100;
 }
 
-.main__wrapper{
-    position: relative;
-    overflow: hidden;
+.main__wrapper {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 1500px;
+  max-width: 1850px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  background-image: url("../../app/images/background/second_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

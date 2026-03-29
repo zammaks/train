@@ -1,14 +1,12 @@
 .hero {
   position: relative;
-  /* background-image: url('./pictures/a cap.jpg'); */
-  background-repeat:repeat-x;
+  background-repeat: repeat-x;
   min-height: 1000px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  /* opacity: 59%; */
 }
 
 .quote-box {
@@ -28,9 +26,7 @@
   z-index: 10;
   display: flex;
   max-height: 120px;
-  /* ← важно */
   align-items: flex-start;
-  /* текст начинается сверху */
   gap: 16px;
 }
 
@@ -38,9 +34,7 @@
   width: 58px;
   height: auto;
   flex-shrink: 0;
-  /* не сжимается */
   margin-top: 4px;
-  /* чуть ниже, чтобы выровнять по первой строке */
   opacity: 0.9;
 }
 
@@ -60,12 +54,8 @@
   width: 400px;
   height: 700px;
   left: 1%;
-  /* или left: 0; если хочешь совсем к краю */
   top: 10px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-50%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 1;
 }
 
@@ -73,12 +63,8 @@
   position: absolute;
   width: 650px;
   left: 28%;
-  /* или left: 0; если хочешь совсем к краю */
   top: -140px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
@@ -87,12 +73,8 @@
   position: absolute;
   width: 550px;
   right: 0;
-  /* или left: 0; если хочешь совсем к краю */
   top: -120px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
@@ -101,12 +83,8 @@
   position: absolute;
   width: 480px;
   right: 50px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 220px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
@@ -115,12 +93,8 @@
   position: absolute;
   width: 300px;
   right: 370px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 190px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
@@ -129,12 +103,8 @@
   position: absolute;
   width: 60px;
   right: 400px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 392px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   object-fit: contain;
   z-index: 1;
 }
@@ -145,12 +115,8 @@
   position: absolute;
   width: 330px;
   right: 100px;
-  /* или left: 0; если хочешь совсем к краю */
   top: 310px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 1;
 }
 
@@ -161,10 +127,7 @@
   width: 200px;
   right: 190px;
   top: 315px;
-  /* центрируем по вертикали относительно hero */
   transform: translateY(-20%);
-  /* точное выравнивание по центру по вертикали */
-  /* или auto — подбери под дизайн             /* чтобы не вылезала за экран на мобильных */
   z-index: 2;
   font-family: "El Messiri", sans-serif;
   font-weight: 700;

@@ -1,4 +1,4 @@
-import {loupe} from "../../../app/images";
+import { loupe } from "../../../app/images";
 
 import "./index.css";
 
