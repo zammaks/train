@@ -21,9 +21,11 @@ export const HomePage = () => {
         </nav>
       </div>
       <Hero />
-      <AboutProject />
-      <ImperyWay />
-      <Contact />
+      <div className="bg__wrapper">
+        <AboutProject />
+        <ImperyWay />
+        <Contact />
+      </div>
       <Footer />
 
     </div>

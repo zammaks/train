@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 400px;
-  margin-top: -300px;
+  margin-top: -100px;
 }
 
 .book__picture {
@@ -71,7 +71,7 @@
   position: absolute;
   width: 8%;
   left: 90%;
-  top: 15%;
+  top: 0;
   z-index: 11;
 }
 
@@ -79,7 +79,7 @@
   position: absolute;
   width: 1000px;
   left: 62%;
-  top: 40%;
+  top: 20%;
   z-index: 11;
 
 }
@@ -91,7 +91,8 @@
   outline: 0;
   font-size: 20px;
   line-height: 1;
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   margin-left: 10px;
   font-weight: bold;
 }
@@ -111,8 +112,8 @@
   border-radius: 51px;
   width: 170px;
   height: 40px;
-  top: 150px;
-  left: 250px;
+  top: 220px;
+  left: 350px;
   z-index: 20;
   font-weight: 700;
   font-size: 22px;
@@ -126,7 +127,7 @@
 
 .mail__input__wrapper {
   border-bottom: 2px solid var(--third);
-  max-width: 45%;
+  max-width: 55%;
 }
 
 .custom__checkbox {
@@ -134,7 +135,7 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .custom__checkbox input {
@@ -171,6 +172,6 @@
 
 .error {
   position: absolute;
-  font-size: 12px;
+  font-size: 15px;
   color: red;
 }

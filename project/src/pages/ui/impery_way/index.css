@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 800px;
-  margin-top: -300px;
+  margin-top: -200px;
 }
 
 
@@ -103,7 +103,7 @@
 
 .first_year {
   top: -50px;
-  left: 150px;
+  left: 200px;
 }
 
 .second_year {
@@ -112,7 +112,7 @@
 }
 
 .spec_year {
-  top: 320px;
+  top: 360px;
   left: -20px;
   transform: rotate(-11deg);
 }
