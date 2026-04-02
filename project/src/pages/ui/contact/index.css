@@ -43,7 +43,7 @@
   text-align: center;
   line-height: 1;
   color: #372B0C;
-  width: 30%;
+  width: 25%;
   left: 25%;
   top: 200px;
   z-index: 15;
@@ -54,7 +54,7 @@
 .key__picture {
   position: absolute;
   width: 2.5%;
-  left: 49%;
+  left: 44%;
   top: 55%;
   z-index: 11;
 }
